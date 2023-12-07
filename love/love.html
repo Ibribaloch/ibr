@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="love.css">
+    <title>purposal</title>
+</head>
+<body style="text-align: center;">
+    <div class="main">
+    <h1>Do You Love Me..?</h1>
+    <button onclick="yes()">
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+        <span class="circle3"></span>
+        <span class="circle4"></span>
+        <span class="circle5"></span>
+        <span class="text">YES</span>
+    </button>
+    
+    <button onclick="no()">
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+        <span class="circle3"></span>
+        <span class="circle4"></span>
+        <span class="circle5"></span>
+        <span class="text">NO</span>
+    </button><br>
+    <div id="para">
+        <p>I LOVE YOU TOO...</p>
+    </div>
+</div>
+    <script>
+        function yes() {
+            var x = document.getElementById("para");
+            x.querySelector("p").style.display="flex";
+            x.querySelector("p").style.color="white";
+            x.querySelector("p").style.fontSize="50px";
+
+            
+        }
+        function no() {
+            var x = document.getElementById("para");
+            x.querySelector("p").style.display="none";
+            
+        }
+    </script>
+</body>
+</html>
